@@ -21,5 +21,7 @@ namespace :mensa do
         MensaMailer.open.deliver_now
       end
     end
+    logger = Logger.new('log/development.log')
+    logger.debug("実行完了")
   end
 end
