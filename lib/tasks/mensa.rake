@@ -19,6 +19,8 @@ namespace :mensa do
       text = node.css('img').first.attributes["alt"].value
       if text != '満員'
         MensaMailer.open.deliver_now
+      elsif text != '締切'
+        MensaMailer.open.deliver_now
       end
     end
     logger = Logger.new('log/development.log')
