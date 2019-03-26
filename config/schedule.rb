@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 5.minutes do
-  rake "mensa:send_email", environment: "development"
-end
+# every 5.minutes do
+#   rake "mensa:send_email", environment: "development"
+# end
